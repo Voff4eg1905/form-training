@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./modern-normalize.css">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="mobile-button" data-modal-close>
+          <svg class="modal-close">
+            <use href="./img/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+        <h4 class="modal-title">Залиште свої дані, ми вам передзвонимо</h4>
+        <form>
+          <ul>
+            <li class="modal-list-item">
+              <svg class="modal-icon">
+                <use href="./img/icons.svg#icon-person-form"></use>
+              </svg>
+              <input
+                type="text"
+                name="modal-name"
+                class="modal-input"
+                id="modal-name"
+                autocomplete="on"
+                placeholder=" "
+                required
+                autofocus
+              />
+              <label for="modal-name" class="modal-label">Ім'я</label>
+
+            </li>
+            <li class="modal-list-item">
+
+              <svg class="modal-icon">
+                <use href="./img/icons.svg#icon-phone-form"></use>
+              </svg>
+              <input
+                type="text"
+                name="modal-phone"
+                class="modal-input"
+                id="modal-phone"
+                autocomplete="on"
+                placeholder=" "
+                required
+                maxlength="12"
+                pattern="[0-9]{12}"
+                title="380xxxxxxxxx"
+              />
+              <label for="modal-phone" class="modal-label">Телефон</label>
+
+            </li>
+            <li class="modal-list-item">
+
+              <svg class="modal-icon">
+                <use href="./img/icons.svg#icon-email-form"></use>
+                </svg>
+              <input
+                type="text"
+                name="modal-mail"
+                class="modal-input"
+                id="modal-mail"
+                autocomplete="on"
+                placeholder=" "
+                required
+              />
+              <label for="modal-mail" class="modal-label">Пошта</label>
+
+            </li>
+          </ul>
+
+          <label for="modal-text-area" class="modal-label">Коментар</label>
+          <textarea
+            name="modal-text-area"
+            id="modal-text-area"
+            class="modal-text-area"
+            placeholder="Введіть текст"
+            autocomplete="off"
+          ></textarea>
+          <input
+            type="checkbox"
+            name="agreement"
+            id="agreement"
+            class="modal-checkbox"
+            required
+          />
+          <label for="agreement" class="modal-agreement"
+            >Погоджуюся з розсилкою та приймаю
+            <a href="#" class="license-link">Умови договору</a></label
+          >
+          <button class="main-button center">Відправити</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
